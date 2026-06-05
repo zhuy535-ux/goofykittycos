@@ -1,0 +1,19 @@
+{
+  "name": "shared-calendar-electron",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^32.0.0"
+  },
+  "build": {
+    "appId": "com.sharedcalendar.app",
+    "productName": "Shared Calendar",
+    "files": ["main.js", "../frontend/dist/**/*"],
+    "directories": { "buildResources": "../frontend/public" }
+  }
+}
